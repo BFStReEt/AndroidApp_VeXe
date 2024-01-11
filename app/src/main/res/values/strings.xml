@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vé xe rẻ</string>
+    <string name="logout">logout</string>
+    <string name="Logout">Logout</string>
+    <string name="Error">Error</string>
+    <string name="Register">Register</string>
+</resources>
