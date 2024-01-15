@@ -34,6 +34,7 @@ android {
 }
 
 dependencies {
+    implementation ("androidx.recyclerview:recyclerview:1.3.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.5.0")
     implementation ("com.android.volley:volley:1.2.1")
     implementation("androidx.appcompat:appcompat:1.6.1")

@@ -1,0 +1,24 @@
+<!-- res/layout/item_seat_horizontal.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/seatImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/your_seat_img"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/seatNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seatImageView"
+        android:layout_centerHorizontal="true"
+        android:text="Ghế số 1"
+        android:textColor="@color/white"
+        android:layout_marginTop="4dp" />
+</RelativeLayout>

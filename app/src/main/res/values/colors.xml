@@ -10,4 +10,6 @@
     <color name="colorPrimary">#512da8</color>
     <color name="colorPrimaryDark">#512da8</color>
     <color name="colorAccent">#8165c0</color>
+    <color name="booked_seat_background">#C0C0C0</color>
+    <color name="available_seat_background">#FFFFFF</color>
 </resources>

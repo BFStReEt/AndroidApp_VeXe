@@ -1,4 +1,4 @@
-package com.example.aaaa;
+package com.example.aaaa.Ticket;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -11,6 +11,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.aaaa.R;
+import com.example.aaaa.Seat.SeatActivity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -36,7 +39,7 @@ public class TicketListActivity extends AppCompatActivity {
     private ArrayAdapter<Ticket> adapter; // Updated to use Ticket class
 
     // Replace with your API endpoint
-    private static final String API_URL = "http://192.168.0.102/Login/search_tickets.php";
+    private static final String API_URL = "http://192.168.1.32/Login/search_tickets.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +59,7 @@ public class TicketListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Ticket selectedTicket = adapter.getItem(position);
 
-                Intent intent = new Intent(TicketListActivity.this, TicketDetailActivity.class);
+                Intent intent = new Intent(TicketListActivity.this, SeatActivity.class);
 
                 intent.putExtra("departure", selectedTicket.getDeparture());
                 intent.putExtra("destination", selectedTicket.getDestination());

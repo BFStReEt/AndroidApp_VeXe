@@ -1,4 +1,4 @@
-package com.example.aaaa;
+package com.example.aaaa.Ticket;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -29,7 +29,7 @@ public class TicketAdapter extends ArrayAdapter<Ticket> {
         TextView textView = convertView.findViewById(android.R.id.text1);
 
         if (ticket != null) {
-            String displayText = "Từ " + ticket.getDeparture() + " đến " +
+            String displayText = "Từ " + ticket.getDeparture() + " -> " +
                     ticket.getDestination() + " \nThời gian:  " +
                     ticket.getTime() + " \nGiá vé: " +
                     ticket.getPrice() + "\n";

@@ -16,10 +16,13 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".TicketDetailActivity"
+            android:name=".Seat.SeatActivity"
             android:exported="false" />
         <activity
-            android:name=".TicketListActivity"
+            android:name=".Ticket.TicketDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ticket.TicketListActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

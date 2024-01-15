@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.aaaa.Ticket.TicketListActivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText etEmail, etPassword;
     private String email, password;
-    private String URL = "http://192.168.0.102/Login/login.php";
+    private String URL = "http://192.168.1.32/Login/login.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    android:background="@drawable/ic_sign_icon"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#e8f4f8">
+    tools:context=".LoginActivity">
 
 
     <ImageView
@@ -19,7 +19,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="40dp"
-        android:src="@drawable/ic_banner_icon"/>
+        android:src="@drawable/ic_banner_icon" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -32,7 +32,12 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:scrollbarThumbHorizontal="@color/white"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -45,22 +50,27 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_width="258dp"
+        android:layout_height="51dp"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:background="@drawable/buttonshape"
         android:fontFamily="@font/calibri"
+        android:onClick="login"
         android:text="Đăng nhập"
         android:textAllCaps="false"
         android:textColor="#ffffff"
-        android:onClick="login"
-        android:textSize="18sp"
+        android:background="@drawable/background_btn_intro1"
+        android:textSize="14sp"
         android:textStyle="bold"
-        android:id="@+id/submit"
+
         />
 
     <TextView
@@ -71,5 +81,6 @@
         android:minHeight="48dp"
         android:onClick="register"
         android:text="Chưa có tài khoản đăng ký ngay"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="@color/white" />
 </LinearLayout>

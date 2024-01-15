@@ -1,41 +1,55 @@
-<!-- activity_ticket_detail.xml -->
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TicketDetailActivity">
+    android:padding="16dp"
+    tools:context=".Ticket.TicketDetailActivity">
 
     <TextView
         android:id="@+id/textViewDeparture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Điểm đi:" />
+        android:text="Điểm đi:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewDestination"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewDeparture"
-        android:text="Điểm đến:" />
+        android:layout_marginTop="8dp"
+        android:text="Điểm đến:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewDestination"
-        android:text="Thời gian:" />
+        android:layout_marginTop="8dp"
+        android:text="Thời gian:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewTime"
-        android:text="Giá vé:" />
+        android:layout_marginTop="8dp"
+        android:text="Giá vé:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/confirmButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewPrice"
-        android:text="Xác nhận đặt vé" />
+        android:layout_below="@+id/textViewPrice"
+        android:layout_marginTop="16dp"
+        android:text="Xác nhận đặt vé"
+        android:textSize="18sp" />
 </RelativeLayout>

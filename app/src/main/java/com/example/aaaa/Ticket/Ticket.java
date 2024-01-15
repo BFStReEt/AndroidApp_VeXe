@@ -1,4 +1,4 @@
-package com.example.aaaa;
+package com.example.aaaa.Ticket;
 
 // Ticket.java
 public class Ticket {

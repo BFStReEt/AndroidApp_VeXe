@@ -2,24 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/orange"
     android:orientation="vertical"
     android:padding="16dp">
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_signup_icon"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_signup_icon" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="Nhập họ tên"
         android:inputType="text"
-        android:minHeight="48dp"
-        android:autofillHints="" />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/email"
@@ -38,28 +39,28 @@
         android:hint="Nhập mật khẩu"
         android:inputType="textPassword"
         android:minHeight="48dp" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/error"
-        android:layout_marginBottom="20dp"
-        android:textColor="@color/black"
-        android:visibility="gone"
-        android:text="@string/Error"
-        />
-    <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         android:layout_marginBottom="20dp"
+        android:text="@string/Error"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <ProgressBar
         android:id="@+id/loading"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Đăng ký"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:text="Đăng ký" />
 
 </LinearLayout>

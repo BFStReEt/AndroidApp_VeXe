@@ -52,7 +52,7 @@ public class ResignActivity extends AppCompatActivity {
                 email = String.valueOf(textInputEditEmail.getText());
                 password = String.valueOf(textInputEditPassword.getText());
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-                String url = "http://192.168.0.102/Login/register.php";
+                String url = "http://192.168.1.32/Login/register.php";
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                         new Response.Listener<String>() {
